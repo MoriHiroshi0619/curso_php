@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Exemplo de PHP</h1>
-    <?php 
+    <?php
         date_default_timezone_set("America/Sao_Paulo");
         $dataAtual = date("D/d/M/Y");
         $horaAtual = date("G:i:s T");
