@@ -12,7 +12,7 @@
         <h1>Analisador de Números</h1>  
         <form action="cad.php" method="post">
             <label for="numero">Número Real</label>
-            <input type="number" name="numero" id="numero">
+            <input type="number" name="numero" step="0.001" id="numero">
             <input type="submit" value="Analisar">
         </form>
     </section>
