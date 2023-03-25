@@ -17,7 +17,7 @@
             $valorDolar = round(($valorReal / 5.22), 2);
             echo "<p>Seus R$$valorReal equivalem a U$$valorDolar </p>"
         ?>
-        <p><strong>Cotação fica de R$5,22</strong> informada diretamente no código</p>
+        <p><strong>Cotação fixa de R$5,22</strong> informada diretamente no código</p>
         <button><a href="./index.php">voltar</a></button>
     </section>
 </body>

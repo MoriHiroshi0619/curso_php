@@ -28,5 +28,5 @@ echo "\n"; */
         ?>
         <button onclick="javascript:document.location.reload()">&#x1F504: gerar outro</button>
     </main>
-</body>
+</body> 
 </html>
