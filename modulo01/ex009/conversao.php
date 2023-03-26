@@ -16,7 +16,7 @@
             if($real != 0){
                 $dolar = $real / $cotacao;
             }else{
-                $dolar = 0;
+                $dolar = $real;
             }
             echo "<p>seus R\$". number_format($real, 2, ",", ".").
                 " equivalem a US\$" . number_format($dolar, 2, ",", ".")
