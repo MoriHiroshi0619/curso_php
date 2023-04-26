@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="../../style/style.css">
 </head>
 <body>
+    <?php 
+        
+    
+    ?>
     <main>
         <h1>Calculadora de tempo</h1>
         <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
@@ -16,5 +20,16 @@
             <input type="submit" value="Calcular">
         </form>
     </main>
+    <section>
+        <h2>Totalizando Tudo</h2>
+        <p>Analisando o valor que você digitou, <strong><?=?> segundos</strong> equivalem a um total de:</p>
+        <ul>
+            <li><?=?> semanas</li>
+            <li><?=?> dias</li>
+            <li><?=?> horas</li>
+            <li><?=?> minutos</li>
+            <li><?=?> segundos</li>
+        </ul>
+    </section>
 </body>
 </html>
