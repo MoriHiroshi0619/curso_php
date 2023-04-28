@@ -9,10 +9,15 @@
 </head>
 <body>
     <?php 
-        $halibi = 0;
-        $total_segundos = $_REQUEST['seg'] ?? 0;
-        $total_minutos = $total_segundos % 60;
-
+        $segundos_input = $_REQUEST['seg'] ?? 0;
+        $total_minutos = floor($segundos_input / 60);
+        $total_segundos = $segundos_input - ($total_minutos * 60);
+        $total_horas = floor($total_minutos / 60);
+        $total_minutos = $total_minutos - ($total_horas * 60);
+        $total_dias = floor($total_horas / 24);
+        $total_horas = $total_horas - ($total_dias * 24);
+        $total_semanas = floor($total_dias / 7);
+        $total_dias = $total_dias - ($total_semanas * 7);
     ?>
     <main>
         <h1>Calculadora de tempo</h1>
@@ -24,11 +29,11 @@
     </main>
     <section>
         <h2>Totalizando Tudo</h2>
-        <p>Analisando o valor que você digitou, <strong><?=$total_segundos?> segundos</strong> equivalem a um total de:</p>
+        <p>Analisando o valor que você digitou, <strong><?=$segundos_input?> segundos</strong> equivalem a um total de:</p>
         <ul>
-            <li><?=$halibi?> semanas</li>
-            <li><?=$halibi?> dias</li>
-            <li><?=$halibi?> horas</li>
+            <li><?=$total_semanas?> semanas</li>
+            <li><?=$total_dias?> dias</li>
+            <li><?=$total_horas?> horas</li>
             <li><?=$total_minutos?> minutos</li>
             <li><?=$total_segundos?> segundos</li>
         </ul>
