@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php 
-        $segundos_input = $_REQUEST['seg'] ?? 0;
+        $segundos_input = $_REQUEST['seg'];
         $total_minutos = floor($segundos_input / 60);
         $total_segundos = $segundos_input - ($total_minutos * 60);
         $total_horas = floor($total_minutos / 60);
@@ -18,6 +18,7 @@
         $total_horas = $total_horas - ($total_dias * 24);
         $total_semanas = floor($total_dias / 7);
         $total_dias = $total_dias - ($total_semanas * 7);
+
     ?>
     <main>
         <h1>Calculadora de tempo</h1>
