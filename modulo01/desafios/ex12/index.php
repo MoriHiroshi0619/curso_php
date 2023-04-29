@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora do tempo</title>
     <link rel="stylesheet" href="../../style/style.css">
-</head>
+</head> 
 <body>
     <?php 
         $segundos_input = $_REQUEST['seg'];
@@ -18,7 +18,6 @@
         $total_horas = $total_horas - ($total_dias * 24);
         $total_semanas = floor($total_dias / 7);
         $total_dias = $total_dias - ($total_semanas * 7);
-
     ?>
     <main>
         <h1>Calculadora de tempo</h1>
